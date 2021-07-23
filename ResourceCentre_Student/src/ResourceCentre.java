@@ -146,6 +146,12 @@ public class ResourceCentre {
 	public static String retrieveAllChromebook(ArrayList<Chromebook> chromebookList) {
 		String output = "";
 		// write your code here
+<<<<<<< HEAD
+
+		for (int i = 0; i < chromebookList.size(); i++) {
+
+			output += String.format("%-10s %-30s %-10s %-10s %-20s\n", chromebookList.get(i).getAssetTag(),
+=======
 		for (int i = 0; i < chromebookList.size(); i++) {
 
 <<<<<<< HEAD
@@ -159,11 +165,20 @@ public class ResourceCentre {
 		}
 		return output;
 	}
+<<<<<<< HEAD
+
+=======
 	
 	public void testRetrieveAllCamcorder() {
 //		assertNotNull("Test if there is valid Camcorder arraylist to add to",camcorderList);
 	}
+>>>>>>> branch 'master' of https://github.com/lorraineeeeeee/ResourceCentre_Student.git
 	public static void viewAllChromebook(ArrayList<Chromebook> chromebookList) {
+<<<<<<< HEAD
+		ResourceCentre.setHeader("CHROMEBOOK LIST");
+		String output = String.format("%-10s %-30s %-10s %-10s %-20s\n", "ASSET TAG", "DESCRIPTION",
+				"AVAILABLE", "DUE DATE","OPERATING SYSTEM");
+=======
 		
 //		String output = retrieveAllChromebook(chromebookList);
 //		System.out.println(output);
@@ -171,6 +186,7 @@ public class ResourceCentre {
 		ResourceCentre.setHeader("CHROMEBOOK LIST");
 		String output = String.format("%-10s %-30s %-10s %-10s %-20s\n", "ASSET TAG", "DESCRIPTION",
 				"AVAILABLE", "DUE DATE","OPTICAL ZOOM");
+>>>>>>> branch 'master' of https://github.com/lorraineeeeeee/ResourceCentre_Student.git
 		 output += retrieveAllChromebook(chromebookList);	
 		System.out.println(output);
 	}
@@ -193,20 +209,25 @@ public class ResourceCentre {
 	}
 	
 	public static Chromebook inputChromebook() {	
-		Chromebook cb =null;
 		// write your code here
 		String tag = Helper.readString("Enter asset tag > ");
 		String description = Helper.readString("Enter description > ");
 <<<<<<< HEAD
 		String os = Helper.readString("Enter operating system > ");
+<<<<<<< HEAD
 		
 		cb= new Chromebook(tag, description, os);
+=======
+
+		Chromebook cb = new Chromebook(tag, description, os);
+>>>>>>> branch 'master' of https://github.com/lorraineeeeeee/ResourceCentre_Student.git
 =======
 		String os = Helper.readString("Enter optical zoom > ");
 
 		cb = new Chromebook(tag, description, os);
 >>>>>>> branch 'master' of https://github.com/lorraineeeeeee/ResourceCentre_Student.git
 		
+>>>>>>> branch 'master' of https://github.com/lorraineeeeeee/ResourceCentre_Student.git
 		return cb;
 		
 	}	
@@ -269,7 +290,10 @@ public class ResourceCentre {
 	}
 	public static void loanChromebook(ArrayList<Chromebook> chromebookList) {
 		// write your code here
+<<<<<<< HEAD
+=======
 		
+>>>>>>> branch 'master' of https://github.com/lorraineeeeeee/ResourceCentre_Student.git
 		ResourceCentre.viewAllChromebook(chromebookList);
 		String tag = Helper.readString("Enter asset tag > ");
 		String due = Helper.readString("Enter due date > ");
