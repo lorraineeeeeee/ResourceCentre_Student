@@ -55,7 +55,6 @@ public class ResourceCentreTest {
 		// Item list is not null, so that can add a new item
 		assertNotNull("Test if there is valid Chromebook arraylist to add to", chromebookList);
 
-<<<<<<< HEAD
 		//Given an empty list, after adding 1 item, the size of the list is 1
 		ResourceCentre.addChromebook(chromebookList, cb1);		
 		assertEquals("Test if that Chromebook arraylist size is 1?", 1, chromebookList.size());
@@ -64,7 +63,6 @@ public class ResourceCentreTest {
 		assertSame("Test that Chromebook is added same as 1st item of the list?", cb1, chromebookList.get(0));
 
 		//Add another item. test The size of the list is 2?
-=======
 		// Given an empty list, after adding 1 item, the size of the list is 1
 		ResourceCentre.addChromebook(chromebookList, cb1);
 		assertEquals("Test if that Chromebook arraylist size is 1?", 1, chromebookList.size());
@@ -72,17 +70,8 @@ public class ResourceCentreTest {
 		// The item just added is as same as the first item of the list
 		assertSame("Test that Chromebook is added same as 1st item of the list?", cb1, chromebookList.get(0));
 
-		// Add another item. test The size of the list is 2?
->>>>>>> branch 'master' of https://github.com/lorraineeeeeee/ResourceCentre_Student.git
-		ResourceCentre.addChromebook(chromebookList, cb2);
-		assertEquals("Test that Chromebook arraylist size is 2?", 2, chromebookList.size());
 	}
-<<<<<<< HEAD
-	
-	
-=======
 
->>>>>>> branch 'master' of https://github.com/lorraineeeeeee/ResourceCentre_Student.git
 	@Test
 	public void testRetrieveAllCamcorder() {
 		// Test if Item list is not null but empty, so that can add a new item
@@ -105,19 +94,12 @@ public class ResourceCentreTest {
 		testOutput = String.format("%-10s %-30s %-10s %-10s %-20d\n", "CC0011", "Nikon HDSLR", "Yes", "", 40);
 		testOutput += String.format("%-10s %-30s %-10s %-10s %-20d\n", "CC0012", "Sony DSC-RX100M7", "Yes", "", 20);
 
-<<<<<<< HEAD
-		assertEquals("Check that ViewAllCamcorderlist", testOutput, allCamcorder);
-=======
-		assertEquals("Check that ViewAllChromebooklist", testOutput, allCamcorder);
->>>>>>> branch 'master' of https://github.com/lorraineeeeeee/ResourceCentre_Student.git
-
 	}
 
 	@Test
 	public void testRetrieveAllChromebook() {
 		// fail("Not yet implemented");
 		// write your code here
-<<<<<<< HEAD
 		assertNotNull("Test if there is valid Chromebook arraylist to add to", chromebookList);
 		
 		//test if the list of camcorders retrieved from the SourceCentre is empty
@@ -136,15 +118,9 @@ public class ResourceCentreTest {
 		testOutput = String.format("%-10s %-30s %-10s %-10s %-20s\n","CB0011", "My Google Chromebook 1st", "Yes", "", "Mac OS");
 		testOutput += String.format("%-10s %-30s %-10s %-10s %-20s\n","CB0012", "SAMSUNG Chromebook 4+", "Yes", "", "Win 10");
 	
-=======
 		// Test if Item list is not null but empty, so that can add a new item
 		assertNotNull("Test if there is valid Chromebook arraylist to add to", chromebookList);
 
-<<<<<<< HEAD
-		// test if the list of camcorders retrieved from the SourceCentre is empty
-		String allChromebook = ResourceCentre.retrieveAllChromebook(chromebookList);
-		String testOutput = "";
-		assertEquals("Check that ViewAllChromebookList", testOutput, allChromebook);
 
 		// Given an empty list, after adding 2 items, test if the size of the list is 2
 		ResourceCentre.addChromebook(chromebookList, cb1);
@@ -160,12 +136,6 @@ public class ResourceCentreTest {
 
 		assertEquals("Check that ViewAllChromebookList", testOutput, allChromebook);
 
-=======
-		// test if the list of chromebook retrieved from the SourceCentre is empty
-		String allChromebook = ResourceCentre.retrieveAllChromebook(chromebookList);
-		String testOutput = "";
-		assertEquals("Check that ViewAllChromebooklist", testOutput, allChromebook);
-
 		// Given an empty list, after adding 2 items, test if the size of the list is 2
 		ResourceCentre.addChromebook(chromebookList, cb1);
 		ResourceCentre.addChromebook(chromebookList, cb2);
@@ -178,42 +148,10 @@ public class ResourceCentreTest {
 		testOutput = String.format("%-10s %-30s %-10s %-10s %-20d\n", "CB0011", "My Google Chromebook 1st", "Yes", "", "Mac OS");
 		testOutput += String.format("%-10s %-30s %-10s %-10s %-20d\n", "CB0012", "SAMSUNG Chromebook 4+", "Yes", "", "Win 10");
 
->>>>>>> branch 'master' of https://github.com/lorraineeeeeee/ResourceCentre_Student.git
-		assertEquals("Check that ViewAllChromebooklist", testOutput, allChromebook);
->>>>>>> branch 'master' of https://github.com/lorraineeeeeee/ResourceCentre_Student.git
 	}
 
-	@Test
-	public void testDoLoanCamcorder() {
-		// fail("Not yet implemented");
-		// write your code here
-<<<<<<< HEAD
-=======
-		//dun know how to do
-		
->>>>>>> branch 'master' of https://github.com/lorraineeeeeee/ResourceCentre_Student.git
 
-	}
 
-	@Test
-	public void testDoLoanChromebook() {
-		// fail("Not yet implemented");
-		// write your code here
-		assertNotNull("Test if there is valid Chromebook arraylist to add to", chromebookList);
-		
-	}
-
-	@Test
-	public void testDoReturnCamcorder() {
-		// fail("Not yet implemented");
-		// write your code here
-<<<<<<< HEAD
-		assertNotNull("Test if there is valid Camcorder arraylist to add to", camcorderList);
-		
-=======
->>>>>>> branch 'master' of https://github.com/lorraineeeeeee/ResourceCentre_Student.git
-
-	}
 
 	@Test
 	public void testDoReturnChromebook() {
